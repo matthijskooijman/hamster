@@ -154,7 +154,7 @@ Note: You'll need recent version of hamster installed on your system (or
 
 #### Running tests
 
-Hamster has a limited test suit, that can be run using Python's builtin
+Hamster has a limited test suite, that can be run using Python's builtin
 unittest module. From the top-level directory, just run:
 
     python3 -m unittest
