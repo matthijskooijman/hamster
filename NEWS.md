@@ -1,48 +1,48 @@
 ## Changes in 3.0.1
 
-* Fixed a rare crash in hamster-window-server (Issue 571).
+* Fixed a rare crash in hamster-window-server (#571).
 
 
 ## Changes in 3.0
 
-* Fixed dialogs placement (PR 549):
+* Fixed dialogs placement (#549):
   - dialogs appear above their parent (the overview, if opened).
   - the window manager/compositer chooses the dialog position.
-* Fixed gnome window/application association (issue 242)
-* Fixed numpad Enter now works in the GUI cmdline (PR 540).
-* Fixed popups position in wayland (issue 339)
+* Fixed gnome window/application association (#242)
+* Fixed numpad Enter now works in the GUI cmdline (#540).
+* Fixed popups position in wayland (#339)
 * Fixed permissions in the source tree.
-* Fixed "Unsorted": no category (PR 502).
-* Fixed removal of tags from autocomplete (issue 238)
-* Fixed hamster-cli windows calls (PR 480)
-* Fixed font sizes on high DPI screens (PR 426)
-* Fixed installation process (PR 421)
+* Fixed "Unsorted": no category (#502).
+* Fixed removal of tags from autocomplete (#238)
+* Fixed hamster-cli windows calls (#480)
+* Fixed font sizes on high DPI screens (#426)
+* Fixed installation process (#421)
   - Updated waf to 2.0.17.
     No longer need python2.
   - Default to --prefix=/usr.
-  - Removed binary footer, to ease debian packaging (PR 569)
-* Fixed category color and tags spillout (PR 414)
-* Fixed multiline description height (PR 412)
-* Fixed adding overlapping activity (PR 410)
-* Fixed update activity window to be resizable (PR 403)
-* Fixed database file monitoring (PR 401).
-* Fixed dark theme colors (PR 391).
-* Fixed hamster-service failure when there is no hamster.db (issue  394).
-* New options for packagers (PR 565)
-* New 'version' or 'Version' command/methods available (PR 528).
-* New Gui is a Gtk.Application (PR 516)
-* New `*JSON` dbus methods to pass facts verbatim (PR 514).
-* New hamster.lib.datetime, customized replacement for python datetime (PR 510).
-* New `CheckFact` and `check_fact` methods available (PR 500).
+  - Removed binary footer, to ease debian packaging (#569)
+* Fixed category color and tags spillout (#414)
+* Fixed multiline description height (#412)
+* Fixed adding overlapping activity (#410)
+* Fixed update activity window to be resizable (#403)
+* Fixed database file monitoring (#401).
+* Fixed dark theme colors (#391).
+* Fixed hamster-service failure when there is no hamster.db (#394).
+* New options for packagers (#565)
+* New 'version' or 'Version' command/methods available (#528).
+* New Gui is a Gtk.Application (#516)
+* New `*JSON` dbus methods to pass facts verbatim (#514).
+* New hamster.lib.datetime, customized replacement for python datetime (#510).
+* New `CheckFact` and `check_fact` methods available (#500).
   Check a fact validity, with detailed error messages.
-* New AddFact accepts -1 as start or end, to mean explicit None (PR 492).
+* New AddFact accepts -1 as start or end, to mean explicit None (#492).
 * Moved Fact to new fact.py
-* Changed basenames from hamster to org.gnome.Hamster.GUI (issue 547)
-  - metainfo.xml (PR 558)
-  - hamster.png icons (PR 542)
-* Changed i18n from from intltools to pure gettext (PR 497).
-* Changed from GConf to GSettings (PR 470)
-* Changed directory names from hamster-time-tracker to hamster (PR 485).
+* Changed basenames from hamster to org.gnome.Hamster.GUI (#547)
+  - metainfo.xml (#558)
+  - hamster.png icons (#542)
+* Changed i18n from from intltools to pure gettext (#497).
+* Changed from GConf to GSettings (#470)
+* Changed directory names from hamster-time-tracker to hamster (#485).
 * Changed parser:
   - Use Fact.parse()
   - Accept activity starting with hash '#' (issue ?)
@@ -62,15 +62,15 @@
     instead of the end.
   - hour/minutes separator can be colon, comma, dot, e.g. 9.30.
     No separator is allowed, but only with 4 digits: hhmm.
-* Changed install bash completion to /usr/share (PR 417)
-* Changed preselect time instead of activity (PR 415)
-* Removed trophies code (PR 408)
-* Used GLib.MainLoop instead of GObject.MainLoop (PR 404)
-* Added stop tracking button to header bar (PR 427)
-* Brought back the help system (PR 393).
+* Changed install bash completion to /usr/share (#417)
+* Changed preselect time instead of activity (#415)
+* Removed trophies code (#408)
+* Used GLib.MainLoop instead of GObject.MainLoop (#404)
+* Added stop tracking button to header bar (#427)
+* Brought back the help system (#393).
 * Improved Add/Update activity window
-  - fixed description input (PR 430)
-* Improved consistency in date/time handling (PR 429) by
+  - fixed description input (#430)
+* Improved consistency in date/time handling (#429) by
     - switching to ISO date format (%Y-%m-%d) in `lib/*`
       to be consistent with hamster-cli usage
     - rounding (i.e. truncating) all activity start/end timestamps
@@ -87,7 +87,7 @@
   - Up, down, Home, End, Page-Up, Page-Down, Return
     work straight from the overview (no need to click).
   - More info on PR #387.
-* Removed non-working stuff that will be developed elsewhere (issue 493):
+* Removed non-working stuff that will be developed elsewhere (#493):
   external, idle, ...
 
 
